@@ -14,13 +14,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script src="plan.json"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <link href="releasetable.css" rel="stylesheet" type="text/css" />
+    <link href="release.css" rel="stylesheet" type="text/css" />
+    <link href=" https://pvsf.jp/menue.css" rel="stylesheet" type="text/css" />
+
     <meta name="google-site-verification" content="kQeOdyUSC-Mx7OnAqeHUMkZXOOw52MdQ-qi9yMQSucM" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://pvsf.jp/menue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
     <script>
         ;
         (function(d) {
@@ -56,49 +60,20 @@
 </head>
 
 <body>
-    <div id="canvas-box">
-        <div class="flexunder">
-            <div id="left">
-                <div id="top">
-                    <div class="box"><img src="img/logo.webp" height="100%" /></div>
-                    <div class="box"><img src="img/rogobig.png" height=" 100%" /></div>
-
-                    <div class="box">
-                        <h1>
-                            <big1>各</big1>作品の投稿予定のご案内</h1>
-                    </div>
-                </div>
-                <div class="center">
-                    <div id="line-t">
-                        <h1 id="r">03/25 18:00 </h1>
-                        <h1 id="l">投稿期間終了</h1>
-                    </div>
-                    <div id="line-b">
-                        <h1 id="r">投稿期間開始 </h1>
-                        <h1 id="l">03/27 23:59</h1>
-                    </div>
-                </div>
-                <div class="under"></div>
+    <section id="hai" class="about">
+        <h1>
+            <br />
+            <div id="spt">
+                <img src="img/rogo.webp" />
+                <h1>#PVSF2022Sp</h1>
+                <p>春のPV連続投稿祭</p>
+                <h2 id="grasp">投稿予定のご案内</h2>
             </div>
-
-            <div id="right"></div>
-        </div>
-
-    </div>
-    </div>
-    <input id="download-btn" type="button" value="画像ファイルとしてダウンロードする" />
+        </h1>
+    </section>
+    <section class="listtable"></section>
 </body>
-
-<script type="text/javascript" charset="utf-8" src="releasetable.js"></script>
-<script>
-    var btn = document.getElementById('download-btn')
-    btn.addEventListener('click', () => {
-        html2canvas(document.querySelector('#canvas-box')).then(canvas => {
-            let downloadEle = document.createElement('a')
-            downloadEle.href = canvas.toDataURL('image/png')
-            downloadEle.download = '各作者の投稿予定表.png'
-            downloadEle.click()
-        })
-    })
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="release.js"></script>
+<script></script>
 <style></style>

@@ -1,0 +1,505 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+.sps {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    border-radius: 50px;
+    z-index: -10;
+}
+
+.sp {
+    width: 30%;
+    padding: 1.5%;
+    border-radius: 20px;
+}
+
+.sp p {
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: rgb(238, 238, 238);
+    word-break: keep-all;
+}
+
+.sp h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    color: #ff8c00;
+    background: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sp3 h2 {
+    letter-spacing: -5px;
+}
+
+#spt {
+    width: 320px;
+    margin: auto;
+    position: relative;
+    bottom: -50px;
+}
+
+#spt h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    font-size: 2.2rem;
+    font-family: din-2014, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#spt p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+    position: relative;
+    top: -7px;
+    background: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#spt img {
+    width: 50%;
+    margin: 50px 25% 70px 25%;
+}
+
+.underline {
+    border-bottom: solid 5px;
+    border-image: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    border-image-slice: 1;
+}
+
+.calendar {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.calender2 {
+    width: 95%;
+    margin: 5px 2.5% 5px 2.5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#matter {
+    width: 1000px;
+    text-align: left;
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+    padding: 5px;
+    color: #fff;
+    font: 1em "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#date {
+    font-family: din-2014, "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #fff;
+    width: 150px;
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+    padding: 20px 5px 20px 5px;
+    text-align: left;
+}
+
+#department {
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+    padding: 5px;
+    background: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: 1em "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    width: 150px;
+}
+
+.karen {
+    width: 18px;
+    margin-right: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px auto 0px auto;
+}
+
+#mar0 {
+    margin: 0 0 20px 0;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+
+h1 {
+    color: #f0f0f0;
+    padding: 5px;
+}
+
+.about {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(10, 10, 10);
+    -webkit-overflow-scrolling: touch;
+}
+
+.URL {
+    color: #5db6ec;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+center h1 {
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: #fff;
+    font: 2em "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-top: 50px;
+}
+
+h12 {
+    color: #fff;
+    font: 1.6em "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 100px 0 100px 0;
+}
+
+h2 {
+    font: 1.1em "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 40px 0px 20px 1%;
+    color: white;
+    overflow: hidden;
+}
+
+p {
+    font: 1rem "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: white;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#grasp {
+    background: linear-gradient( 61deg, rgba(2, 0, 36, 1) 0%, rgba(251, 255, 86, 1) 0%, rgba(251, 198, 171, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dchannel {
+    background-color: rgb(23, 9, 75);
+    color: rgb(209, 209, 209);
+}
+
+.work {
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    margin: 5px auto 5px auto;
+    background-color: #313131;
+    width: 1000px;
+    color: #fff;
+    height: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    font: 1rem "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    transition-duration: 1s;
+}
+
+.work:hover {
+    background-color: #666666;
+    margin: 0px auto 0px auto;
+    height: 50px;
+    transition-duration: 0.2s;
+}
+
+.work.on {
+    height: 100px;
+    padding: 20px 15px 0px 15px;
+    margin-bottom: 0px;
+    background-color: #313131;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.date {
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    width: 1000px;
+    font: 2rem din-2014, "Noto Sans JP", sans-serif;
+    font-weight: 700;
+}
+
+.w1 {
+    width: 20%;
+    color: rgb(255, 255, 255);
+    margin: auto 0 auto 10px;
+}
+
+.w2 {
+    width: calc(80% - 220px);
+    height: 40px;
+    margin: auto 0 auto 0px;
+}
+
+.w4 {
+    width: 50px;
+    color: rgb(255, 255, 255);
+    margin: auto 0 auto 10px;
+}
+
+.w3 {
+    width: 60px;
+    color: rgb(255, 255, 255);
+    font-family: din-2014, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: auto 0 auto 10px;
+}
+
+.w5 {
+    width: 50px;
+    height: 40px;
+    margin: auto 0 auto 10px;
+}
+
+.w1 a {
+    color: #fff;
+}
+
+.work.on .w3 {
+    width: 100px;
+    font-size: 2rem;
+}
+
+.work.on .w1 {
+    width: calc(100% - 250px);
+    font-size: 1.8rem;
+}
+
+.work.on .w4 {
+    width: 60px;
+    font-size: 1.5rem;
+}
+
+.work.on .w2 {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.listtable {
+    margin: 80px auto auto auto;
+}
+
+.icon {
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.menu__item {
+    background: #5200b7;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px;
+}
+
+.menu__item__link {
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu__item__link:after {
+    border-radius: 50%;
+    background: #222222;
+    content: "+";
+    display: block;
+    font-family: "Noto Sans JP", sans-serif;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.menu__item__link.on:after {
+    content: "-";
+}
+
+.submenu {
+    background: #fff;
+    display: none;
+    border-radius: 0px 0px 20px 20px;
+    padding: 6px 15px 20px 25px;
+    margin: 0px auto 0px auto;
+    background-color: #313131;
+    width: 990px;
+    color: #fff;
+    font: 0.9rem "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+.submenu a {
+    color: rgb(116, 186, 233);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.submenu__item {
+    border-bottom: 1px solid #5200b7;
+    color: #222;
+    padding: 1rem;
+}
+
+#fa-twitter {
+    color: #ffffff;
+    background-color: #1da1f2;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#fa-youtube {
+    color: #ffffff;
+    background-color: #da1725;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .about {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .about {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .about {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .sp h2 {
+        font-size: 2rem;
+    }
+    .sp p {
+        font-size: 0.75rem;
+    }
+    .sp {
+        padding: 0;
+        width: 33.33%;
+    }
+    .sps {
+        padding: 20px 0 0 0;
+    }
+    #matter {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 741px) {
+    .sp h2 a {
+        font-size: 1.5rem;
+    }
+    .sp p {
+        font-size: 0.5rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    table {
+        display: block;
+        overflow-x: scroll;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    th {
+        padding: 5px 15px 5px 15px;
+    }
+    #date {
+        padding: 5px 15px 5px 15px;
+    }
+    #department {
+        padding: 5px 15px 5px 15px;
+    }
+    #matter {
+        padding: 5px 15px 5px 15px;
+    }
+}
