@@ -253,20 +253,21 @@ a {
     display: flex;
     font: 1rem "Noto Sans JP", sans-serif;
     font-weight: 500;
-    transition-duration: 1s;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .work:hover {
     background-color: #666666;
-    margin: 0px auto 0px auto;
-    height: 50px;
-    transition-duration: 0.2s;
+    padding: 5px 30px 5px 20px;
+    transition-duration: 0.5s;
 }
 
 .work.on {
     height: 100px;
     padding: 20px 15px 0px 15px;
     margin-bottom: 0px;
+    margin: 5px auto 0px auto;
     background-color: #313131;
     border-radius: 20px 20px 0px 0px;
 }
@@ -297,6 +298,13 @@ a {
     width: 50px;
     color: rgb(255, 255, 255);
     margin: auto 0 auto 10px;
+}
+
+.onei {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    word-break: keep-all;
 }
 
 .w3 {
@@ -390,7 +398,7 @@ a {
     display: none;
     border-radius: 0px 0px 20px 20px;
     padding: 6px 15px 20px 25px;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 5px auto;
     background-color: #313131;
     width: 990px;
     color: #fff;

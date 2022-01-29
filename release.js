@@ -26,8 +26,17 @@ $(function() {
                     var kaburi = 0;
                     console.log('けんち');
                     if (ord4 >= 2) {
-                        var kaburi = 1;
-                        console.log('かぶり');
+                        if (ord2 == orderlong - 1) {
+                            console.log('ラスト例外処理');
+                            order.splice(ord2 + 1, 0, ord1);
+                            stoploop = 1;
+                            var kaburi = 1;
+
+                        } else {
+                            var kaburi = 1;
+                            console.log('かぶり');
+                        }
+
                     }
                     for (let loop2 = 0; loop2 < orderlong; loop2++) {
                         var ord3 = order[loop2];
@@ -118,8 +127,14 @@ $(function() {
             if (nowdate == plan[i].date) {
 
             } else {
-                h = h + '<div class="date">' + plan[i].date + '</div>';
-                var nowdate = plan[i].date;
+                if (plan[i].date == '03-29') {
+                    h = h + '<div class="date">03-29 まとめ動画にて上映' + '</div>';
+                    var nowdate = plan[i].date;
+                } else {
+                    h = h + '<div class="date">' + plan[i].date + '</div>';
+                    var nowdate = plan[i].date;
+                }
+
 
             }
             h = h + '<div class="work menu__item__link js-menu__item__link">';
@@ -132,7 +147,7 @@ $(function() {
                     h = h + '<a id="grasp">団体</a>';
                 } else {
                     if (plan[i].type == '音映') {
-                        h = h + '<a id="grasp">音楽×映像</a>';
+                        h = h + '<a id="grasp" class="onei">音楽<wbr>映像</a>';
                     }
                 }
             }
@@ -173,6 +188,7 @@ $(function() {
             if (plan[i].ymulink == '') {} else {
                 h = h + '　　<a href="' + plan[i].ymulink + '"> <br>楽曲URL＞ </a>'
             }
+
             h = h + '</div></div>';
 
         }
